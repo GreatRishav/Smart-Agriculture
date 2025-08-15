@@ -1,0 +1,110 @@
+<html>
+<title>Salary Prediction</title>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .body
+    {
+        width: 100%;
+        height: 80vh;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .box
+    {
+        padding: 20px;
+        background-color: silver;
+        height: 300px;
+        width: 300px;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        gap:15px;
+        cursor: pointer;
+        transition: 1s;
+
+    }
+    .box:hover
+    {
+        box-shadow: 10px 10px 5px 12px rgba(0, 0, 0, 0.467);
+    }
+    h2
+    {
+        margin-left: 35px;
+        margin-top: 45px;
+
+
+    }
+    h3
+    {
+        margin-left: 67px;
+        margin-top: 45px;
+    }
+    .salary
+    {
+        background-color: pink;
+        text-align: center;
+
+    }
+    .Result
+    {
+        background-color: yellow;
+    }
+    .heading
+    {
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .meaning
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blueviolet;
+        padding: 15px;
+    }
+    .text
+    {
+        font-size: 30px;
+    }
+    .one
+    {
+        margin-top: 35px;
+    }
+    .heading
+    {
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="heading" >Pump Output</div>
+    <div class="body">
+        <div class="box">
+            <div class="salary">
+                <h2>Pump Prediction</h2>
+            </div>
+            <div class="Result">
+                <h3>    status: {{ result }} </h3>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="meaning">
+        <div class="zero text">0 means pump will be off</div>
+        <div class="one text">1 means the pump will be on</div>
+    </div>
+
+<br>
+
+</body>
+</html>

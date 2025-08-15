@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pump Prediction App</title>
+  <style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+    }
+    .tempandmoist
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* gap: 15px; */
+        height: 50vh;
+    }
+    label
+    {
+        font-size: 30px;
+        text-decoration: none;
+    }
+    input
+    {
+        font-size: 35px;
+    }
+    button
+    {
+        margin-top: 15px;
+        font-size: 25px;
+        background-color: rgba(255, 123, 0, 0.866);
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 15px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    button:hover
+    {
+        background-color: aquamarine;
+    }
+    .head
+    {
+        background-color:green;
+        color: white;
+    }
+    .main
+    {
+        background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align:center; background-color: aquamarine;">Smart Agriculture</h1>
+  <div style="text-align:center ;">
+  <div class="head"><h1>Pump Prediction App</h1></div>
+  <div class="main">
+    <form action="/submit" method='POST'>
+
+        <div class="tempandmoist">
+            <div class="mositure">
+                <label >Enter Moistures</label><br>
+                <input type="text" name="moisture">
+                <br>
+            </div>
+            <div class="temperature">
+                <label >Enter Temperature</label><br>
+                <input type="text" name="temperature">
+                <p><button type="submit">Submit</button></p>
+            </div>
+
+        </form>
+        </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
